@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+        section{
+            width: 90vw;
+            height: 90vh;
+            margin: 32px auto;
+            background-image: linear-gradient(red, blue);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:6rem 37rem 5rem ;
+            grid-template-areas: 
+            "nav nav nav "
+            "main main main"
+            "footer footer footer"
+            ;          
+        }
+        nav{
+            grid-area: nav;
+            background-image: linear-gradient(rgb(65, 112, 63), rgb(0, 128, 0));
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .navbar{
+            display: flex;
+            align-items: center;
+            
+        }
+        main{
+            grid-area: main;
+            background-image:linear-gradient(green, white);
+        }
+        footer{
+            grid-area: footer;
+            background-color: rgb(223, 241, 221);
+        }
+        .ul{
+            display: flex;
+            margin-left: 1000px;
+        }
+        .li{
+            list-style: none;
+            border: ridge 1px black;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: bisque;
+            border: none;
+            border-radius: 10px;
+            
+        }
+        .li:hover{
+            background-color: rgb(234, 238, 238);
+        }
+        .div1{
+            margin-left: 30px;
+            border-right: 2px solid;
+            padding: 9px;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(69, 85, 44);
+        }
+        a:hover{
+            color: rgb(90, 187, 81);
+        }
+        main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows:15rem 22rem ;
+            grid-template-areas: 
+            "aa aa"     
+            "ll ii"       
+            ;
+        }
+        .image{
+            grid-area: aa;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .list{
+            grid-area: ll;
+            /* background-color: red; */
+            padding: 30px;
+            margin: 0px auto;
+            
+        }
+        .time-table{
+            grid-area: ii;
+            /* background-color: blue; */
+            margin: 0px auto;
+        }
+        .PictureForMain{
+            
+        }
+        img{
+            
+            width: 400px;
+            border-radius: 50px;
+            
+        }
+        table, th, td{
+            /* border: solid 1px; */
+            padding: 2px;
+            
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: rgb(17, 204, 33);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="navbar">
+                <div class="div1">
+                    <h3><a href="">Home</a></h3>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li class="li"><a href="">To-Do</a></li>
+                        <li class="li"><a href="">ASSIGNMENT</a></li>
+                        <li class="li"><a href="">Check-List</a></li>
+                        <li class="li"><a href="">About</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+        <main>
+            <div class="image">
+               <div class="pictureForMain">
+                    <img src="/pexels-adrian-dorobantu-989175-2127733.jpg" alt="">
+               </div>
+            </div>
+           
+                <div class="list">
+
+                    <div>    
+                        <h3>Things to Achieve</h3>
+                        <br>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>BOOTSTRAP</li>
+                            <li>JAVASCRIPT</li>
+                            <li>REACT JAVASCRIPT</li>
+                        </ul>
+                        <br>
+                        <ol>
+                            <h3>Things to get from store </h3>
+                            <br>
+                            <li>Brevages</li>
+                            <li>Liqour/Whine</li>
+                            <li>Groceries</li>
+                            <li>Dog Meal</li>
+                            <li>Cat Meal</li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                <div class="time-table" >
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Multiplication</th>
+                        </tr>
+                        <tr>
+                            <td>2 X 1</td>
+                            <td>= 2</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 2</td>
+                            <td>= 4</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 3</td>
+                            <td>= 6</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 4</td>
+                            <td>= 8</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 5</td>
+                            <td>= 10</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 6</td>
+                            <td>= 12</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 7</td>
+                            <td>= 14</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 8</td>
+                            <td>= 16</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 9</td>
+                            <td>= 18</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 10</td>
+                            <td>= 20</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 11</td>
+                            <td>= 22</td>
+                        </tr>
+                        <tr>
+                            <td>2 X 12</td>
+                            <td>= 24</td>
+                        </tr>
+                    </table>
+
+                </div>
+            
+        </main>
+
+
+        <footer>
+
+        </footer>
+    </section>
+</body>
+</html>
